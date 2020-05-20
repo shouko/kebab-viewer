@@ -40,7 +40,7 @@ jobs:
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: hi-kebab/hi-kebab.github.io
         force_orphan: true
         user_name: 'github-actions[bot]'
